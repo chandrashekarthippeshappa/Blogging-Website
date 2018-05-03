@@ -1,0 +1,58 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+
+
+
+
+<!doctype html>
+<html>
+
+<head>
+	{% block head %}
+
+	<title>My First Page</title>
+
+
+
+
+
+{% endblock%}
+
+</head>
+
+
+{% block body%}
+
+<body >
+
+<h1> This is Awesome </h1> &nbsp <h1>{{key1}}</h1>
+<ul>
+	{% for i in key2 %}
+	<li> {{i}} {{key1}}</li>
+	{% endfor %}
+
+
+
+
+</ul>
+
+<b>The best thing about being who you really are is that you simply cannot fail! Be you, be awesome and live awesomely. <strong>-Ricardo Housham<strong> </b> <br>
+
+
+<a href="https://www.google.com" class="btn btn-primary btn-lg " role="button">Primary link</a><br>
+
+<img src='{% static "image2.jpg" %}' alt="Responsive image">
+
+
+	
+	
+
+
+{% endblock %}
+
+
+</body>
+
+</html>

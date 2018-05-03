@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block body%}
+
+
+
+<h2> Fill the details to add new Blog </h2>
+<form method="POST">
+	{% csrf_token %}
+	{{form.as_p}}
+	<!-- <input type="submit" name="Post new blog" /> -->
+	<button type="submit" class="btn btn-primary btn-lg">submit</button>
+</form>
+
+
+{% endblock%}
